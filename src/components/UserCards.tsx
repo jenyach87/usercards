@@ -39,7 +39,7 @@ export default function UsersCards() {
           className="p-2 mb-4 w-full rounded border"
           onChange={(e) => setQuery(e.target.value)}
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((user) => (
             <Link href={`/users/${user.id}`} key={user.id}>
               <div className="p-4 bg-gray-300 rounded shadow transition duration-300 transform hover:scale-105 hover:bg-blue-300 cursor-pointer">
